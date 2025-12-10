@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tran Thi Vy Anh - Resume</title>
+    <style>
+        /* General Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0; /* Light gray background for web view */
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 11pt; /* Standard resume font size */
+            line-height: 1.5;
+            color: #000;
+        }
+
+        /* Resume Container (A4 Size approximation) */
+        .resume-container {
+            width: 210mm;
+            min-height: 297mm;
+            background-color: #ffffff;
+            margin: 40px auto;
+            padding: 40px 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 26pt;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 14pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .header-line {
+            border-top: 1px solid #333;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            margin-bottom: 20px;
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Summary Section */
+        .summary {
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+
+        /* Section Headers */
+        h2.section-title {
+            font-size: 11pt;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-bottom: 1px solid #000;
+            padding-bottom: 3px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* content Blocks */
+        .entry {
+            margin-bottom: 15px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 700;
+        }
+
+        .entry-title {
+            font-weight: 700;
+        }
+
+        .entry-date {
+            font-weight: 700;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .entry-subtitle {
+            font-style: normal;
+            margin-bottom: 5px;
+        }
+
+        .project-desc {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: disc;
+            margin-left: 18px; /* Indentation for bullets */
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+
+        /* Skills Section */
+        .skills-list p {
+            margin-bottom: 5px;
+        }
+
+        .skill-label {
+            font-weight: 700;
+        }
+
+        /* Print Media Query */
+        @media print {
+            body {
+                background-color: white;
+            }
+            .resume-container {
+                width: 100%;
+                margin: 0;
+                padding: 0; /* Adjust print padding as needed */
+                box-shadow: none;
+            }
+            @page {
+                margin: 0.5in; /* Set print margins */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <!-- Header -->
+        <header>
+            <h1>TRẦN THỊ VY ANH</h1>
+            <div class="job-title">DATA SCIENTIST INTERN</div>
+            <div class="header-line"></div>
+            <div class="contact-info">
+                +84 328 765 904 | vya123.work@gmail.com | <a href="https://github.com/VYANHTRAN" target="_blank">https://github.com/VYANHTRAN</a>
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <div class="summary">
+            Data Scientist with a focus on turning complex data into actionable insights, eager to tackle dynamic challenges and apply analytical skills to drive data-informed decisions. I have demonstrated proficiency in statistical analysis, machine learning, and seamless collaboration across teams.
+        </div>
+
+        <!-- Professional Experience -->
+        <section>
+            <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+
+            <!-- Job 1 -->
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">MB AMC - Digital Transformation Intern</span>
+                    <span class="entry-date">May 2025 - Present</span>
+                </div>
+                <ul>
+                    <li>Crawled and cleaned 50,000+ rows of real estate pricing data to train machine learning models for accurate property price prediction.</li>
+                    <li>Geocoded over 100,000 locations to support route optimization for travelling property valuation specialists, reducing travel time and operational inefficiencies.</li>
+                    <li>Collected and digitized zoning and land-use data for all 63 provinces, creating comprehensive, GIS-compatible planning maps for internal analytics and visualization.</li>
+                </ul>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">NEU Data and AI Application Lab - Research Assistant</span>
+                    <span class="entry-date">March 2025 - Present</span>
+                </div>
+                <ul>
+                    <li>Crawled and structured 1,000+ product listings from an e-commerce website to build a training dataset for a customer support chatbot.</li>
+                    <li>Developed a resume-to-job matcher to automate candidate screening, reducing manual review time and improving recruitment efficiency.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2 class="section-title">EDUCATION</h2>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Data Science in Economics and Business</span>
+                    <span class="entry-date">Aug 2016 - Oct 2019</span>
+                </div>
+                <div class="entry-subtitle">National Economics University</div>
+                <ul>
+                    <li>GPA: 3.23 / 4.0</li>
+                    <li>Relevant Coursework: Probability & Statistics, Python Programming, Database Designing and Querying, Data Visualization, Machine Learning, Deep Learning.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Achievements & Projects -->
+        <section>
+            <h2 class="section-title">ACHIEVEMENTS & PROJECTS</h2>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">WiDS Datathon 2025 – ADHD Classification Challenge</span>
+                </div>
+                <div class="project-desc">Global data science competition focused on computational neuroscience and mental health prediction</div>
+                <ul>
+                    <li>Developed a stacked ensemble pipeline to predict ADHD diagnosis and sex using multi-modal data (fMRI-based connectomes, demographics, and behavioral scores), combining specialized models across five engineered feature kernels</li>
+                    <li>Applied advanced techniques including Riemannian geometry, spectral graph embeddings, and Laplacian eigenvalue analysis to handle high-dimensional neuroimaging data (~20,000 features per subject).</li>
+                    <li>Automated hyperparameter tuning with Optuna and used MLflow for experiment tracking, ensuring robust model performance and reproducibility in a computationally intensive setting.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications & Skills -->
+        <section>
+            <h2 class="section-title">CERTIFICATIONS & SKILLS</h2>
+            <div class="skills-list">
+                <p><span class="skill-label">Technical Skills:</span> Python for Data Science, SQL, Tableau, Excel, Google Sheet, Probability & Statistics.</p>
+                <p><span class="skill-label">Languages:</span> English, Chinese.</p>
+                <p><span class="skill-label">Certifications:</span> IELTS (8.0).</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
